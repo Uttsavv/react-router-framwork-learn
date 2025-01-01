@@ -7,5 +7,7 @@ export default [
         route('contacts/:contactId/edit', 'routes/edit-contact.tsx'),
         route('contacts/:contactId/destroy', 'routes/destroy-contact.tsx'),
     ]),
-    route('about', 'routes/about.tsx')
+    route('users', 'routes/users.tsx'),
+    route('users/create', 'routes/create-users.tsx'),
+    route('about', 'routes/about.tsx'),
 ] satisfies RouteConfig;

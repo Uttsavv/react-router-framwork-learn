@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: drizzle-postgres
+    environment:
+      - POSTGRES_USER=drizzle
+      - POSTGRES_DB=drizzle
+      - POSTGRES_PASSWORD=drizzle
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_db_storage:/var/lib/postgresql/data
+
+volumes:
+  postgres_db_storage:
